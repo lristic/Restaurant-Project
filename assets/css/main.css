@@ -6,62 +6,59 @@ html,body{
 
 body{
     background-color: #9DBEBB;
-    color: #F6AE2D;
+    color: #0bbee9;
     font-family: 'Raleway';
 }
 
 .index{
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/bg1.jpg") ;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/bg.jpeg") ;
     background-size: cover;
     
 }
 
 .menu{
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/bg3.jpg") ;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/bg.jpeg") ;
     background-size: cover;
     
 }
 
 .contact {
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/bg4.jpg") ;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/bg.jpeg") ;
     background-size: cover;
 }
 
 .intro{
-    margin: 0;
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
+    margin-left: 50px;
 }
 
 
 .intro h1{
-    font-size: 50px;
-    text-align: center;
-    
+    font-size: 40px;
+    text-align: left;
+    margin-top: 20%;    
 }
 
 .intro p {
     font-size: 25px;
-    text-align: center;
+    text-align: left;
 }
 
 .intro a {
     text-align: center;
-    background-color: #F6AE2D;
-    color: #1F1300;
+    background-color: #0bbee9;
+    color: black;
     padding-left: 35px;
     padding-right: 35px;
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 10px;
-    border: 3px solid #F6AE2D;
+    border: 3px solid #0bbee9;
 }
 
 .intro a:hover{
-    background-color: #1F1300;
-    color: #F6AE2D;
-    border: 3px solid #F6AE2D;
+    background-color: #1cf7ff;
+    color: black;
+    border: 3px solid #1cf7ff;
     padding-left: 35px;
     padding-right: 35px;
     padding-top: 15px;
@@ -89,16 +86,16 @@ html.is-animating .transition-fade {
 } 
 
 .navbar-nav a{
-    color: #F6AE2D!important;
+    color: #0bbee9!important;
 }
 
 .navbar-nav a:hover {
-    color: #F26419!important;
+    color: #079fc4!important;
     transition: 0.2s ease;
 }
 
 .navbar-nav a.active{
-    color: #F26419!important;
+    color: #1cf7ff!important;
 }
 
 .swiper-slide{
@@ -116,8 +113,87 @@ html.is-animating .transition-fade {
 }
 
 .swiper-pagination > .swiper-pagination-bullet-active{
-    --swiper-theme-color: #F6AE2D!important;
+    --swiper-theme-color: #0bbee9!important;
 }
+
+
+/* GRID */
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 32%;
+}
+.span_1_of_2 {
+	width: 66%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 932px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 932px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+    .intro h1{
+        text-align: center;
+        margin-top: 10%;
+    }
+    .intro p{
+        text-align: center;
+    }
+    .intro a{
+        margin-left: 40%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+    .intro h1{
+        text-align: center;
+        margin-top: 10%;
+    }
+    .intro p{
+        text-align: center;
+    }
+    .intro a{
+        margin-left: 30%;
+    }
+    
+    .logo-jumbo {
+        margin-left: 6%;
+    }
+}
+
 
 /* SADIE HOVER */
 
@@ -127,8 +203,8 @@ figure.effect-sadie3 figcaption::before {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: -webkit-linear-gradient(top, rgba(246, 174, 45, 1) 0%, rgba(246, 174, 45, .8) 0%);
-	background: linear-gradient(to bottom, rgba(246, 174, 45, 1) 0%, rgba(246, 174, 45, .7) 0%);
+	background: -webkit-linear-gradient(top, rgba(11, 190, 233, 1) 0%, rgba(11, 190, 233, 1) 0%);
+	background: linear-gradient(to bottom, rgba(11, 190, 233, 1) 0%, rgba(11, 190, 233, 1) 0%);
 	content: '';
 	opacity: 0;
 	-webkit-transform: translate3d(0,50%,0);
@@ -138,15 +214,15 @@ figure.effect-sadie3 figcaption::before {
 
 figure.effect-sadie3 h2 {
 	position: absolute;
-	top: 100%;
+	top: 105%;
 	left: 0;
 	width: 100%;
-	color: rgba(246, 174, 45, 1);
+	color: rgba(11, 190, 233, 1);
     font-size: 40px;
 	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
 	transition: transform 0.35s, color 0.35s;
 	-webkit-transform: translate3d(0,-50%,0);
-	transform: opacity(0,-50%,0);
+	transform: translate3d(0,-50%,0);
     text-align: center;
 }
 
@@ -158,11 +234,11 @@ figure.effect-sadie3 p {
 
 figure.effect-sadie3 p {
 	position: absolute;
-	font-size: 30px;
-    color: #1F1300;
+	font-size: 25px;
+    color: black;
     top:40%;
-	left: 12%;
     padding-left: .5em;
+    padding-right: .5em;
 	text-align: center;
 	opacity: 0;
 	-webkit-transform: translate3d(0,0,0);
@@ -171,10 +247,11 @@ figure.effect-sadie3 p {
 }
 
 figure.effect-sadie3:hover h2 {
-	opacity: 0;
+	opacity: 1;
     transition: 0.2s;
+    color: black;
 	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
-	transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+	transform: translate3d(0,-20%,0) translate3d(0,-320px,0);
 }
 
 figure.effect-sadie3:hover figcaption::before ,
@@ -185,20 +262,20 @@ figure.effect-sadie3:hover p {
 }
 
 .order-now{
-    background-color: #F6AE2D;
-    color: #1F1300;
+    background-color: #0bbee9;
+    color: black;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 35px;
     padding-right: 35px;
-    border: 2px solid #F6AE2D;
+    border: 2px solid #0bbee9;
     border-radius: 50px;
 }
 
 .order-now:hover{
-    color: #F6AE2D!important;
-    background-color: #1F1300;
-    border: 2px solid #F6AE2D;
+    color: #0bbee9!important;
+    background-color: black;
+    border: 2px solid #0bbee9;
     transition: 0.2s ease;
     text-decoration: none;
 }
@@ -207,22 +284,22 @@ figure.effect-sadie3:hover p {
 .forma {
     height: 40px;
     width: 300px;
-    background-color: #F6AE2D;
-    border: 2px solid #1f1300;
+    background-color: #0bbee9;
+    border: 2px solid black;
     border-radius: 5px;
 }
 
 .forma-tekst{
     height: 80px;
     width: 630px;
-    background-color: #F6AE2D;
-    border: 2px solid #1f1300;
+    background-color: #0bbee9;
+    border: 2px solid black;
     border-radius: 5px;
 }
 
 .forma-dugme{
-    background-color: #f6ae2d;
-    border: 2px solid #1f1300;
+    background-color: #0bbee9;
+    border: 2px solid black;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 15px;
@@ -239,19 +316,56 @@ figure.effect-sadie3:hover p {
 }
 
 .call-us {
-    color: #F26419;
+    color: #1cf7ff;
 }
 
 .call-us:hover{
-    color: #f6ae2d;
+    color: #0bbee9;
     transition: 0.2s;
     text-decoration: none;
+}
+
+.logo {
+    height: auto;
+    width: 70px;
+}
+
+.logo-jumbo {
+    height: auto;
+    width: 300px;
+    margin-top: 20%;
+    
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(11, 190, 233, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgba(11, 190, 233, 1);
+} 
+
+.swiper-pagination-bullet{
+    opacity: 1!important;
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
 }
 
 
 @media(max-width:992px){
     .navbar{
-        background-color: #F6AE2D!important;
+        background-color: black!important;
     }
     
     .navbar-brand {
@@ -259,12 +373,9 @@ figure.effect-sadie3:hover p {
     }
     
     .navbar-nav a{
-        color: #1F1300!important;
+        color: #0bbee9!important;
     }
     
-    .navbar-nav a.active{
-        
-    }
 }
 
 @media(max-width: 736px){

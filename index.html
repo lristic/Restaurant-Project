@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Restaurant</title>
+    <title>Donut Universe</title>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -19,8 +19,8 @@
 <body class="index animsition">
   
   <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-  <a class="navbar-brand" href="#">Logo</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <a class="navbar-brand" href="index.html"><img class="logo" src="assets/img/logo.png"></a>
+  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -33,15 +33,31 @@
 </nav>
    
    
-   <div class="intro row">
-      <div class="col-md-12">
-       <h1>Welcome message!</h1>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat obcaecati, provident labore cupiditate animi!</p> 
-       <br>
-       <center><a href="./menu.html" class="animsition-link" >Menu</a></center>
-   </div>
-   </div>
+   <div class="section group">
+	<div class="col span_1_of_2 intro">
+	    <h1>Welcome to the Donut Universe!</h1>
+        <p>Making the best donuts in the Milky Way</p> 
+        <br>
+        <a class="mr-auto" href="./menu.html" class="animsition-link" >Menu</a>
+	</div>
+	<div class="col span_2_of_2">
+	   <img class="logo-jumbo floating" src="assets/img/logo.png">
+	</div>
+</div>
    
+   <!---
+   <div class="intro" style="margin-left: 50px;">
+         <div class="row">
+      <div class="col-md-8">
+       <h1>Welcome to the Donut Universe!</h1>
+       <p>Making the best donuts in the Milky Way</p> 
+       <br>
+       <a class="mr-auto" href="./menu.html" class="animsition-link" >Menu</a>
+    </div>
+    <center><div class="col-md-4"><img class="logo-jumbo floating" src="assets/img/logo.png"></div></center>
+   </div>
+   </div>
+   --->
    
 </body>
 <script>

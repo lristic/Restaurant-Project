@@ -414,6 +414,12 @@ figure.effect-sadie3:hover p {
 }
 
 @media(max-width: 767px){
+    .gift-box{
+        text-align: center;
+    }
+    .gift-box h3{
+        margin-left:0;
+    }
 
     .gift-box h1{
         font-size: 70px;
